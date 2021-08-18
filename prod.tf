@@ -4,7 +4,9 @@ provider "aws" {
 }
 
 
-resource "aws_s3_bucket" "learning_tf" {
+resource "aws_s3_bucket" "prod_learning_tf" {
   bucket = "learning-tf-17082021"
   acl    = "private"
 }
+
+resource "aws_vpc_default" "default" {}
